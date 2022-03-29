@@ -2,8 +2,8 @@
 
 ### parameters
 api_token=$CIRCLE_API_TOKEN
-org=""
-repos=('repo_1' 'repo_2')
+org="felixshiftellecon"
+repos=('snippetbox' 'circleci-playground')
 datetoday=$(date +"%F")
 dayrange="60" # number of days you want to report on
 

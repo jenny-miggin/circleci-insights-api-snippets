@@ -3,15 +3,15 @@
 set -e
 
 # Parameters required to make up the org slug: 
-VCS=""
-ORG=""
-PROJECT_NAME=""
+VCS="github"
+ORG="felixshiftellecon"
+PROJECT_NAME="snippetbox"
 
-MAIN_BRANCH=""
-MAIN_WORKFLOW=""
+MAIN_BRANCH="main"
+MAIN_WORKFLOW="build-test-and-deploy"
 
-NEW_BRANCH=""
-NEW_WORKFLOW=""
+NEW_BRANCH="no-cypress-orb"
+NEW_WORKFLOW="build-test-and-deploy"
 
 CREDITS_MAIN=$(curl -s --request GET --url "https://circleci.com/api/v2/insights/${VCS}/${ORG}/${PROJECT_NAME}/workflows/{$MAIN_WORKFLOW}?branch={$MAIN_BRANCH}&circle-token=${CIRCLE_TOKEN}" | jq .items[0].credits_used)
 
