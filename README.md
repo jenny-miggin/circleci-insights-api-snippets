@@ -1,4 +1,4 @@
-# insights-training
+# CircleCI Insights Snippets
 Helpful Scripts for CircleCI Insights API
 
 ## Getting Started
